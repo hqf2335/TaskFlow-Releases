@@ -1,0 +1,12 @@
+TaskFlow 软件使用许可 / Binary Use License
+Copyright (c) 2026 hqf2335. 保留所有未明确授予的权利。
+
+本许可仅适用于发布者有权授权的 TaskFlow 自有程序及随附使用文档，不取代第三方许可。
+
+1. 允许任何人免费安装和使用此官方二进制版本，进行合法的个人、学习或工作用途，并为备份目的复制程序包。不因使用本软件取得 TaskFlow 自有源码、商标或著作权的所有权；本发布不授予自有源码的开源许可。
+2. 除法律另有规定或另获授权外，不授予修改、再许可或重新分发 TaskFlow 自有程序的权利。推荐分享官方 Releases 下载链接。第三方组件可依各自许可证使用、修改和再分发。
+3. 第三方权利优先：Qt 等 LGPL 组件的许可、替换、重新链接及为调试这些修改而进行逆向工程的权利不受本许可限制。用户可用兼容的修改版库替换随包库，运行组合后的程序；本程序没有要求这些库必须保持原始签名或哈希的运行锁定。
+4. 软件按现状提供。在适用法律允许范围内，发布者不承诺无错误、适用于特定目的或持续维护；使用前请自行备份重要数据。适用法律不能排除的责任和用户权利不受影响。
+5. 第三方许可、版权和对应源码说明见 THIRD_PARTY_NOTICES.md、SOURCE_CODE.md 和 licenses/。本许可不限制这些文件中明确授予的权利。
+
+English summary: Free, non-exclusive permission to install and use the official TaskFlow binary for lawful personal, educational and work purposes, and to make backup copies. No open-source license is granted for proprietary TaskFlow code. Third-party licenses prevail, including replacement/relinking and reverse engineering for debugging modifications to LGPL libraries. Provided as-is to the extent permitted by law. The Chinese text above states the complete application terms.
