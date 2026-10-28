@@ -16,7 +16,12 @@
 
 程序包不含个人数据库。数据通常保存在当前 Windows 用户的 AppData/TaskFlow/TaskFlow；复制程序目录不隔离数据，升级/恢复前请备份。自有程序按包内 LICENSE.txt 免费使用，业务源码保持私有；第三方组件保留各自许可及修改/替换权利。
 
-QtBase、QtSvg、QtTranslations、GCC 13.1.0、MinGW-w64 v11 源码、MinGW-Builds 配方及原始构建记录随同本 Release 提供。Qt 动态库采用 LGPLv3；库替换、调试修改所需逆向工程不受应用许可限制。
+QtSvg、QtTranslations、MinGW-w64 v11 源码、MinGW-Builds 配方及原始构建记录作为本 Release 附件提供。QtBase 和 GCC 采用 GPLv3 第 6(d) 节网络源码方式，通过以下对应上游源码下载，完整地址、大小、摘要见 SOURCE_DOWNLOADS.json 和 [源码说明](https://github.com/hqf2335/TaskFlow-Releases/blob/main/SOURCE_CODE.md)：
+
+- [QtBase 6.12.0 完整源码](https://download.qt.io/official_releases/qt/6.12/6.12.0/submodules/qtbase-everywhere-src-6.12.0.tar.xz)
+- [GCC 13.1.0 完整源码](https://ftp.gnu.org/gnu/gcc/gcc-13.1.0/gcc-13.1.0.tar.xz)
+
+两份大源码均已实际下载并核对上游摘要，包内提供备用镜像地址。Qt 动态库采用 LGPLv3；库替换、调试修改所需逆向工程不受应用许可限制。
 
 ## 本次检查与限制
 

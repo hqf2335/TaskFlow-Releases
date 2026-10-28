@@ -24,7 +24,7 @@ TaskFlow 是 Windows 本地任务管理软件，支持项目分类、任务搜�
 
 ## 许可与第三方源码
 
-TaskFlow 自有程序可按 [软件使用许可](LICENSE.txt) 免费使用，本仓库不公开其业务源码。Qt 等第三方组件保留各自许可与修改/替换权利，详见 [第三方声明](THIRD_PARTY_NOTICES.md) 和 [对应源码及库替换说明](SOURCE_CODE.md)。同一 Release 提供对应 Qt/GCC/MinGW 源码和构建材料，均可免费下载。
+TaskFlow 自有程序可按 [软件使用许可](LICENSE.txt) 免费使用，本仓库不公开其业务源码。Qt 等第三方组件保留各自许可与修改/替换权利，详见 [第三方声明](THIRD_PARTY_NOTICES.md) 和 [对应源码及库替换说明](SOURCE_CODE.md)。同一 Release 提供 Svg/翻译/MinGW 源码及构建材料；QtBase、GCC 完整源码通过 [明确的官方下载地址与摘要](SOURCE_CODE.md) 免费获取，亦见 SOURCE_DOWNLOADS.json。
 
 程序包包含运行依赖、使用说明、许可原文、清单及校验脚本。先核对 Release 的 SHA256SUMS.txt，再在解压目录运行 `powershell.exe -NoProfile -File .\Verify-Package.ps1`。校验仅检查完整性，不启动程序。
 

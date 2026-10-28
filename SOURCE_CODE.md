@@ -1,20 +1,42 @@
 # 第三方对应源码、构建与库替换
 
-本文件对应 TaskFlow 0.1 的 Windows x64 便携发布。这里提供第三方源码，不公开 TaskFlow 自有业务源码。
+本文件对应 TaskFlow 0.1 的 Windows x64 便携发布。提供的是第三方对应源码，不公开 TaskFlow 自有业务源码。
 
-## 同一 Release 免费提供的源码附件
+## 免费获取完整对应源码
 
-在 https://github.com/hqf2335/TaskFlow-Releases/releases/tag/v0.1.0 下载：
+QtBase 与 GCC 采用 GPLv3 第 6(d) 节的网络源码方式：在程序包、下载仓库及 Release 页面旁明确给出可免费、无需登录下载的对应源码地址，源码可由上游或第三方服务器提供。具体 URL、大小及已核验 SHA-256 同时写在 SOURCE_DOWNLOADS.json。发布者仍负责在适用分发义务期间保持源码可获取；链接失效时请通过本仓库 Issues 报告，需恢复源码可获取性后再继续相应分发。
 
-- qtbase-everywhere-src-6.12.0.tar.xz：Core/Gui/Widgets/Sql、Windows/SQLite 等插件和内嵌第三方源码、构建脚本；提交 025bdad181de241e81bf853c8a2d7bf3d19261a9。
-- qtsvg-everywhere-src-6.12.0.tar.xz：Svg 及 SVG 插件；提交 883a58532078d003cefef0a549bfe9f885ce41f5。
+### QtBase 6.12.0 完整源码
+
+包含 Core/Gui/Widgets/Sql、Windows/SQLite 等插件、内嵌第三方代码和构建脚本。源码提交 `025bdad181de241e81bf853c8a2d7bf3d19261a9`。
+
+- [Qt 官方下载](https://download.qt.io/official_releases/qt/6.12/6.12.0/submodules/qtbase-everywhere-src-6.12.0.tar.xz)
+- [Qt 官方镜像网络中的 JAIST 下载](https://ftp.jaist.ac.jp/pub/qtproject/archive/qt/6.12/6.12.0/submodules/qtbase-everywhere-src-6.12.0.tar.xz)
+- 文件名 `qtbase-everywhere-src-6.12.0.tar.xz`，51,220,268 字节。
+- SHA-256：`a951bd163c7b80fc6b8c88d7668fb56abf91c152373e13c10666763238131307`。
+
+### GCC 13.1.0 完整源码
+
+包含 libgcc、libstdc++ 及原始构建文件；另须使用同一 Release 附带的 MinGW-Builds 配方及 10 个 GCC 补丁。
+
+- [GNU 官方下载](https://ftp.gnu.org/gnu/gcc/gcc-13.1.0/gcc-13.1.0.tar.xz)
+- [清华 GNU 镜像下载](https://mirrors.tuna.tsinghua.edu.cn/gnu/gcc/gcc-13.1.0/gcc-13.1.0.tar.xz)
+- 文件名 `gcc-13.1.0.tar.xz`，87,451,196 字节。
+- SHA-256：`61d684f0aa5e76ac6585ad8898a2427aade8979ed5e7f85492286c4dfc13ee86`。
+
+上述两份完整源码已实际下载并通过上游摘要核对；GitHub 大附件上传超时，因此没有将未完成附件作为完整源码发布。
+
+## 同一 Release 内的其余源码及构建附件
+
+在 https://github.com/hqf2335/TaskFlow-Releases/releases/tag/v0.1.0 免费下载：
+
+- qtsvg-everywhere-src-6.12.0.tar.xz：Svg 和 SVG 插件；提交 883a58532078d003cefef0a549bfe9f885ce41f5。
 - qttranslations-everywhere-src-6.12.0.tar.xz：翻译源；提交 2811457ceff8f0c24a1c4d14f947a283a17239d0。
-- gcc-13.1.0.tar.xz：GCC 完整上游源，包括 libgcc/libstdc++。
-- mingw-builds-gcc13-recipes.tar.gz：MinGW-Builds 配方与补丁，固定提交 7ff96692a8032d893781523b311ac9b6cbbda0a1，对应工具链构建时期。
-- mingw-w64-v11.0.0.tar.gz：MinGW-w64 与 winpthreads 源码。
-- third-party-build-info.zip：Qt 官方配置、工具链原始构建记录、10 个已使用 GCC 补丁及构建说明。
+- mingw-w64-v11.0.0.tar.gz：MinGW-w64 和 winpthreads 源码。
+- mingw-builds-gcc13-recipes.tar.gz：构建配方与补丁，固定提交 7ff96692a8032d893781523b311ac9b6cbbda0a1，对应工具链构建时期。
+- third-party-build-info.zip：Qt 官方配置、工具链原始构建记录、10 个已使用 GCC 补丁和说明。
 
-附件无需登录或付费，依各自许可证分发；Release 附有总 SHA256SUMS.txt。GitHub 自动生成的 Source code.zip/tar.gz 只是公开下载仓库说明文件快照，不是这些库或 TaskFlow 业务源码，请下载上述具名附件。
+这些文件依各自许可证分发。Release 的 SHA256SUMS.txt 核对实际附件，SOURCE_DOWNLOADS.json 核对外部两份大源码。GitHub 自动生成的 Source code.zip/tar.gz 只是公开下载仓库说明文件快照，不是应用业务源码或完整第三方源码，请按上述地址下载具名文件。
 
 ## 来源核对
 
